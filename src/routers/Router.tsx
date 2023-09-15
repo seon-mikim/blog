@@ -1,6 +1,6 @@
 import Layout from "src/Layout";
 import { LoginPage, MainPage, PostDetailPage, PostEditPage, PostNewPage, PostPage, ProfilePage, SignUpPage } from "@pages/index";
-import { createBrowserRouter } from "react-router-dom";
+import { Navigate, createBrowserRouter } from "react-router-dom";
 
 const Router = createBrowserRouter([{
 	path: '/',
@@ -37,6 +37,10 @@ const Router = createBrowserRouter([{
 			path: 'posts/edit/:postId',
 			element:<PostEditPage/>
 		},
+		{
+			path: '*',
+			element: <Navigate replace to='/'/>
+		}
 	]
 }
 ])
