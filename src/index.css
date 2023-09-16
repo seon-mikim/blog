@@ -45,6 +45,17 @@ footer {
   
 }
 
+footer a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #7b7a7a;
+}
+
+footer a:focus,
+footer a:hover {
+  color: #2c2b2b;
+}
+
 /* post list */
 
 .post__list {
