@@ -8,9 +8,9 @@ interface NavLinkProps {
 
 const NavLink = ({ destination, linkText }: NavLinkProps) => {
   return (
-    <li>
+    <>
       <Link to={destination}>{linkText}</Link>
-    </li>
+    </>
   );
 };
 
