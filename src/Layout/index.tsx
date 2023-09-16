@@ -1,12 +1,14 @@
-import NavBar from '@components/NavBar/NavBar';
+import Footer from '@components/ui/Footer/Footer';
+import Header from '@components/ui/Header/Header';
 import React from 'react'
 import { Outlet } from 'react-router';
 
 const Layout = () => {
 	return (
 		<div>
-			<NavBar/>
-			<Outlet/>
+			<Header/>
+			<Outlet />
+			<Footer/>
 		</div>
 	)
 }
