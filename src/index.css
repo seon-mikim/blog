@@ -11,3 +11,44 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+header {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  border: 1px solid #f2f2f2;
+  padding: 10px 40px;
+  min-height: 47px;
+}
+
+header a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #7b7a7a;
+}
+
+header a:focus,
+header a:hover {
+  color: #2c2b2b;
+}
+
+footer {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px;
+  padding: 20px 40px;
+  font-size: 14px;
+  text-align: center;
+  background-color: #f2f2f2;
+  
+}
+
+/* post list */
+
+.post-list {
+  min-height: 90vh;
+  padding: 20px 40px;
+  text-align: center;
+}
