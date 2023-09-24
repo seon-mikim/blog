@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 const MainPage = () => {
   return (
-    <Main>
+    <Main className='main'>
       <header className="main-header">
         <nav className="post__navigation">
           <List>
