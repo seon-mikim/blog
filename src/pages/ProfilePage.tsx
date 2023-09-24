@@ -1,9 +1,13 @@
-import React from 'react'
+import Profile from '@components/Profile/Profile';
+import Main from '@components/ui/Main/Main';
+import React from 'react';
 
 const ProfilePage = () => {
-	return (
-		<div>ProfilePage</div>
-	)
-}
+  return (
+    <div>
+      <Main className='main'><Profile/></Main>
+    </div>
+  );
+};
 
-export default ProfilePage
+export default ProfilePage;
