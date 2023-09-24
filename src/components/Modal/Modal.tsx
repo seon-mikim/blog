@@ -8,7 +8,7 @@ interface ModalProps {
 const Modal = ({isName }: ModalProps) => {
 	return (
 		<div>
-			<Form isName={ isName} />
+			<Form  />
 		</div>
 	)
 }

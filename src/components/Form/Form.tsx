@@ -2,11 +2,9 @@ import InputLabel from '@components/ui/InputLabel/InputLabel';
 import useInput from '@hooks/useInput';
 import { useLocation } from 'react-router-dom';
 
-interface FormProps {
-  isName: string
-}
 
-const Form = ({isName }: FormProps) => {
+
+const Form = () => {
   const location = useLocation();
   const signUpLocation = location.pathname === '/signup'
   const {
@@ -41,7 +39,7 @@ const Form = ({isName }: FormProps) => {
         onChange={handleChange}
         onBlur={handleBlur}
       />
-      {isName ==='회원가입' && (
+      {signUpLocation && (
         <InputLabel
           labelText="비밀번호 재확인"
           type="password"
