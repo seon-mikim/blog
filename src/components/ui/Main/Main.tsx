@@ -1,12 +1,12 @@
 import React from 'react';
 
 interface MainProps {
-	className: string,
-	children: React.ReactNode,
+
+	children: React.ReactNode
 }
 
-const Main = ({ className,children }: MainProps) => {
-	return <main className={className }>{children}</main>;
+const Main = ({ children }: MainProps) => {
+	return <main>{children}</main>;
 };
 
 export default Main;

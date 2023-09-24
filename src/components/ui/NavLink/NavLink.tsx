@@ -7,11 +7,7 @@ interface NavLinkProps {
 }
 
 const NavLink = ({ destination, linkText }: NavLinkProps) => {
-  return (
-    <>
-      <Link to={destination}>{linkText}</Link>
-    </>
-  );
+  return <Link to={destination}>{linkText}</Link>;
 };
 
 export default NavLink;
