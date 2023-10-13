@@ -1,8 +1,12 @@
+import PostForm from '@components/PostForm/PostForm'
+import Main from '@components/ui/Main/Main'
 import React from 'react'
 
 const PostNewPage = () => {
 	return (
-		<div>PostNewPage</div>
+		<Main className='main'>
+		<PostForm/>
+		</Main>
 	)
 }
 

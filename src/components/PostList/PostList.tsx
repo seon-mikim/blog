@@ -1,16 +1,19 @@
 import PostHeader from '@components/PostHeader/PostHeader';
+import List from '@components/ui/List/List';
+import ListItem from '@components/ui/ListItem/ListItem';
 import { Link } from 'react-router-dom';
 
 interface PostListProps {
 	hasNavigation?: boolean
 }
 
-const PostList = ({hasNavigation = true }:PostListProps) => {
+const PostList = ({ hasNavigation = true }: PostListProps) => {
+
   return (
-		<div className="post__list">
+		<List className="post__list">
 			{hasNavigation&&<PostHeader />}
       {[...Array(10)].map((e, index) => (
-        <div className="post__box" key={index}>
+        <ListItem className="post__box" key={index}>
           <Link to={`/posts/${index}`}>
             <div className="post__profile-box">
               <div className="post__profile"></div>
@@ -24,9 +27,9 @@ const PostList = ({hasNavigation = true }:PostListProps) => {
             <div className="post__delete">삭제</div>
             <div className="post__edit">수정</div>
           </div>
-        </div>
+        </ListItem>
       ))}
-    </div>
+    </List>
   );
 };
 

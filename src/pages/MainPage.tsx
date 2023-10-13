@@ -1,14 +1,15 @@
+import Carosel from '@components/Carosel/Carosel';
 import PostList from '@components/PostList/PostList';
 import Main from '@components/ui/Main/Main';
 
-
 const MainPage = () => {
   return (
-    <Main className='main'>
-      
-     
-      <PostList />
-    </Main>
+    <>
+      <Carosel />
+      <Main className="main">
+        <PostList />
+      </Main>
+    </>
   );
 };
 
