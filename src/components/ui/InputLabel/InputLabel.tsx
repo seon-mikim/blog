@@ -4,10 +4,8 @@ import Input from '../Input/Input';
 interface InputLabelProps {
   value: string;
   type: string;
-  validate: string;
   labelText: string;
   className: string;
-
   name: string;
   onChange: (event: ChangeEvent<HTMLInputElement>) => void;
   onBlur: (
@@ -22,7 +20,7 @@ const InputLabel = forwardRef(
       className,
       value,
       labelText,
-      type ='text',
+      type,
       name,
       onChange,
       onBlur,
@@ -30,8 +28,8 @@ const InputLabel = forwardRef(
     ref: ForwardedRef<HTMLInputElement | null>
   ) => {
     return (
-      <label className={className}>
-        {labelText}
+      <div>
+        <label className={className}>{labelText}</label>
         <Input
           ref={ref}
           value={value}
@@ -40,7 +38,7 @@ const InputLabel = forwardRef(
           onChange={onChange}
           onBlur={(event) => onBlur(event, ref)}
         />
-      </label>
+      </div>
     );
   }
 );
