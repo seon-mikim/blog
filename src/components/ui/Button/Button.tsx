@@ -2,12 +2,14 @@ import React ,{MouseEvent } from 'react'
 interface Props extends React.HTMLProps<HTMLButtonElement> {}
 interface ButtonProps {
 	name: string,
-  onClick: (evnet: MouseEvent<HTMLButtonElement>) => void;
-  children: React.ReactNode;
+	buttonName: string
+	className: string
+  onClick?: (evnet: MouseEvent<HTMLButtonElement>) => void;
+
 }
-const Button = ({name,onClick ,children}: ButtonProps) => {
+const Button = ({name,buttonName,className, onClick }: ButtonProps) => {
 	return (
-		<button name={name } onClick={onClick}>{children }</button>
+		<button name={name} className={className } onClick={onClick}>{buttonName }</button>
 	)
 }
 
